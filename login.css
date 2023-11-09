@@ -51,15 +51,19 @@ body {
   textarea,
   select {
     margin: 10px 0 0 0;
-    width: 100%;
+    width: 50%;
     min-height: 2em;
   }
   
   input, textarea {
-    background-color: #0a0a23;
-    border: 1px solid #0a0a23;
+    background-color: skyblue;
     color: #ffffff;
   }
+
+  button{
+    margin-left: 180px;
+  }
+  
   
   
   
