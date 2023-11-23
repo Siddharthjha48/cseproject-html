@@ -4,21 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainweb.css">
-    </link>
+    <title>project</title>
+    <style>
+
+    body{
+        width: 100%;
+        background-image: url("ccc.jpg")
+;        background-repeat: no-repeat;
+        background-size:cover;
+     }
+
+     .heading{
+    color: aqua;
+    text-align: center;
+    background-color: hotpink;
+    font-size: 30px;
+    width: 500px;
+    margin-left: 500px;
+    margin-top:0
+    }
+
+    figcaption{
+        background-color:grey;
+        color:rgb(8, 8, 8);
+        margin-top:0px;
+        height: 30px;
+        font-size: larger;
+        width:400px;
+        text-align: center;
+        mix-blend-mode:luminosity;
+        border-radius: 20px;
+    }
+
+    .main a {
+        text-decoration: none;
+    }
+
+
+
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin-top: 50px;
+    }
+
+    .rain{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        margin-top: 70px;
+    }
+
+    p a{
+        color:rgb(15, 15, 15);
+        text-decoration: none;
+        font-size: 30px;;
+        position: absolute;
+        left: 720px;
+        top: 950px;
+        transition:  1s;
+        margin-top: 100px;
+    }
+
+   p a:hover{
+    transform: scale(1.55);
+    color:blueviolet;
+
+   }
+
+   img {
+    border-radius: 21px;
+   }
+
+figure:hover{
+        transform: scale(1.05);
+        transition: 2s ;
+        }
+
+  
+   
+
+     
+   
+    </style>
 </head>
-
 <body>
-    <div class="heading">Gift recommendations for everyone💝</div>
+    <div class="heading">Gift recommendations for everyone💝</div><br>
+    <div class="main">
+        <a href="little.html">
+    <figure class="heading1" ><img src="little.jpg" width="400px" height="400px"><figcaption>Gifts for Little Ones👶</figcaption> </figure>
+            </a> 
+            <a href="children.html">
+    <figure class="heading2"><img src="children.jpg" width="400px" height="400px"><figcaption>Gifts for Childrens👦</figcaption></figure></a>
+    <a href="men.html">
+    <figure class="heading3"><img src="men.jpg" width="400px" height="400px"><figcaption>Gifts for Man🧍‍♂️</figcaption></figure>
+    </a>
+    </div>
 
-    <div class="heading1">Gifts for little ones👶 </div>
-    <div class="heading2">Gifts for man🧍‍♂️</div>
-
-    <div class="heading3">Gifts for childrens👦</div>
-    <div class="heading4">Gifts for Girls👩‍🦰</div>
-
-    <div class="heading5">Gifts for 50+👩‍🦰</div>
-
+    <div class="rain">
+        <a href="women.html">
+    <figure class="heading4"><img src="women.jpg" width="400px" height="400px"><figcaption>Gifts for Womens👩‍🦰</figcaption></figure>
+            </a> <a href="older.html">
+    <figure class="heading5"><img src="older.jpg" width="400px" height="400px"><figcaption>Gifts for older people👩‍🦰</figcaption></figure>
+                </a>
+    </div>
+    <p><a href="login.html"> Return</a></p>
 
 </body>
 
