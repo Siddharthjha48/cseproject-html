@@ -111,10 +111,16 @@ h2{
 
 .you{
     position: fixed;
-    right:20px;
+    right:-12px;
     top:2%;
     border:2px solid white;
     border-radius: 50%;
+}
+
+#you figure:hover{
+    transform: scale(1.2);
+    transition: 0.89s ;
+    
 }
 
 
@@ -125,7 +131,10 @@ h2{
 
 <body> 
     <div class="container">
-        <a href="project.html"><div class="you"><img src="back.png" height="40px"></div></a>
+        <div id="you">
+            <a href="login.html"></a><figure class="you"><a href="login.html"><img src="back.png" height="40px"></figure></a>
+        </div>
+        
         <div class="row">
 
             <div class="column"> 
