@@ -4,7 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
+   
     <link rel="stylesheet" href="login.css" />
+        <style>
+
+         .login{
+            margin-right: 45px;
+            }
+
+        .one{
+            text-decoration: underline;
+        }
+
+        .one:hover{
+            cursor:pointer;
+            background-color:yellow;
+        }
+
+        .two{
+            text-decoration: underline;    
+        }
+
+        a{
+            color:blue;
+        }
+
+        .two:hover{
+            cursor:pointer;
+            background-color:yellow;     
+         }
+
+       p{
+        color:blueviolet;
+       }
+
+       button{
+        background-color: rgb(27, 250, 250);
+        height:30px;
+        width:80px;
+        margin-left: 195px;
+        margin-top:10px;
+        border-radius: 10px;
+        font-size: 15px;
+        text-decoration:none;
+        text-transform: uppercase;
+        }
+
+       label input{
+        border-radius: 8px;
+       }
+
+        </style>
+
+        <script>
+            alert("Password must be atleast 8 character with one special character");
+        </script>
 </head>
 
 <body>
@@ -16,17 +70,17 @@
     <div id="ct">
         <h1>Login Page 🎁</h1>
 
-        <form method="post" action=''>
-            <fieldset>
-                <label for="Username"> &nbsp;&nbsp;&nbsp;Username  <input id="Username" name="Username" type="text" required /></label>
-                <label for="Password"> &nbsp;&nbsp;&nbsp;Password: <input id="Password" name="Password" type="password"
-                        required /></label>
-            </fieldset>
-            
-            <!-- <input  value="Submit" /> -->
-        </form><button onclick="window.location.href='/project.html'" >Submit</button>
-    </div>
+        <form name="myForm"  method="post" required>
+            <label for="fname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Username</i>: &nbsp;<input id="fname" type="text" required /></label>
 
+            <label for="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Password</i>:  &nbsp;&nbsp;<input id="password"  type="password" required  /></label>
+            <button><a href="project.html" >Submit</a></button>
+            <br>
+            <div class="login">
+            <p>Login with <span class="one" ><a href="google.html"  target="_blank">Google</a></span></p>
+            <p>Dont' have account <span class="two"><a href="sign.html" target="_blank">Sign up</a></span></p>
+        </div>
+          </form>
+     </div>
 </body>
-
 </html>
