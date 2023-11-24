@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project</title>
     <style>
-
+.navbar{
+            background-color: black;
+            border-radius: 30px;
+          }
+          navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+        }
     body{
         width: 100%;
         background-image: url("ccc.jpg")
@@ -88,6 +96,18 @@
   </style>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="login.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
     <div class="heading">Gift recommendations for everyone💝</div><br>
     <div class="main">
         <a href="little.html">
@@ -113,6 +133,7 @@
     <div id="you">
     <a href="login.html"></a><figure class="you"><a href="login.html"><img src="back.png" height="60px"></figure></a>
 </div>
+
 </body>
 
 </html>
