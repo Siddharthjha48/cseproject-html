@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project</title>
     <style>
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .navbar{
-            background-color: black;
-            border-radius: 30px;
+            background-color: pink;
+            border-radius: 300px;
+            width: 150px
           }
           navbar li{
             float:left;
@@ -17,7 +30,7 @@
         }
     body{
         width: 100%;
-        background-image: url("ccc.jpg")
+    
 ;        background-repeat: no-repeat;
         background-size:cover;
      }
@@ -85,30 +98,35 @@
     top:145%;
     border:4px solid white;
     border-radius: 50%;
+    
 }
 
 #you figure:hover{
     transform: scale(1.2);
     transition: 0.89s ;
     
+    
 }
 
   </style>
 </head>
 <body>
+    <div id = "background-video">
+        <video  autoplay muted loop id="myVideo">
+            <source src="giftback.mp4" type="video/mp4">
+        </video>
+    </div>
     <header>
         <nav class="navbar">
             <ul>
                 <li><a href="login.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="contactus.html">Contact us</a></li>
-                <div class="search">
-                    <input type="text" name="search" id="search" placeholder="Search this website">
                 </div>
             </ul>
         </nav>
     </header>
-    <div class="heading">Gift recommendations for everyone💝</div><br>
+    <div class="heading">Gift recommendations for Everyone💝</div><br>
     <div class="main">
         <a href="little.html">
     <figure class="heading1" ><img src="little.jpg" width="400px" height="400px"><figcaption>Gifts for Little Ones👶</figcaption> </figure>
