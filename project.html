@@ -10,7 +10,7 @@
 #background-video {
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
+  object-fit:contain;
   position: fixed;
   left: 0;
   right: 0;
@@ -18,22 +18,28 @@
   bottom: 0;
   z-index: -1;
 }
-.navbar{
+        .navbar{
             background-color: pink;
             border-radius: 300px;
-            width: 150px
+            width: 150px;
+            text-decoration: none;
           }
-          navbar li{
-            float:left;
-            list-style: none; 
-            margin: 13px 20px;
-        }
+
+         ul{
+            text-decoration: none;
+         }
+
+       
+
+
     body{
         width: 100%;
     
 ;        background-repeat: no-repeat;
         background-size:cover;
      }
+
+     
      .heading{
     color: aqua;
     text-align: center;
@@ -41,7 +47,8 @@
     font-size: 30px;
     width: 500px;
     margin-left: 500px;
-    margin-top:0
+    margin-top:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
     figcaption{
@@ -76,6 +83,14 @@
         margin-top: 70px;
     }
 
+    
+    .pain{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        margin-top: 70px;
+    }
+
    img {
     border-radius: 21px;
    }
@@ -85,17 +100,22 @@
         transition: 1.5s ;
         }
 
-        .rain figure:hover{
+    .rain figure:hover{
         transform: scale(1.10);
         transition: 1.5s ;
         transform: rotate(10deg);
         }
 
+    .pain figure:hover{
+    transform: scale(1.10);
+    transition: 1.5s ;
+    }
+
         
 .you{
     position:absolute;
     right:5px;
-    top:145%;
+    top:250%;
     border:4px solid white;
     border-radius: 50%;
     
@@ -103,9 +123,7 @@
 
 #you figure:hover{
     transform: scale(1.2);
-    transition: 0.89s ;
-    
-    
+    transition: 0.89s ;  
 }
 
   </style>
@@ -120,36 +138,52 @@
         <nav class="navbar">
             <ul>
                 <li><a href="login.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
                 </div>
             </ul>
         </nav>
     </header>
     <div class="heading">Gift recommendations for Everyone💝</div><br>
     <div class="main">
-        <a href="little.html">
+        <a href="little.html" target="_blank">
     <figure class="heading1" ><img src="little.jpg" width="400px" height="400px"><figcaption>Gifts for Little Ones👶</figcaption> </figure>
             </a> 
             <a
-             href="children.html">
+             href="children.html" target="_blank">
     <figure class="heading2"><img src="children.jpg" width="400px" height="400px"><figcaption>Gifts for Childrens👦</figcaption></figure></a>
-    <a href="men.html">
+    <a href="men.html" target="_blank">
     <figure class="heading3"><img src="men.jpg" width="400px" height="400px"><figcaption>Gifts for Man🧍‍♂️</figcaption></figure>
     </a>
     </div>
 
     <div class="rain">
-        <a href="women.html">
+        <a href="sport.html" target="_blank">
+            <figure class="heading9"><img src="sports.webp" width="400px" height="400px"><figcaption>Gifts for sports person👩‍🦰</figcaption></figure>
+                    </a> 
+        <a href="women.html" target="_blank">
     <figure class="heading4"><img src="women.jpg" width="400px" height="400px"><figcaption>Gifts for Womens👩‍🦰</figcaption></figure>
             </a>
-             <a href="older.html">
+        <a href="older.html" target="_blank">
     <figure class="heading5"><img src="older.jpg" width="400px" height="400px"><figcaption>Gifts for older people👩‍🦰</figcaption></figure>
-                </a>
+            </a>
+    </div>
+
+    <div class="pain">
+        <a href="birth.html" target="_blank">
+            <figure class="heading6"><img src="birth.jpg" width="400px" height="400px"><figcaption>Birthday Gifts</figcaption></figure>
+                                </a>
+
+        <a href="marry.html" target="_blank">
+            <figure class="heading7"><img src="wedding.webp" width="400px" height="400px"><figcaption>Wedding Gifts</figcaption></figure>
+                    </a>
+                <a href="anni.html" target="_blank">
+            <figure class="heading8"><img src="anni.webp" width="400px" height="400px"><figcaption>Anniversery Gifts👩‍🦰</figcaption></figure>
+        </a>
+
     </div>
 
     <div id="you">
-    <a href="login.html"></a><figure class="you"><a href="login.html"><img src="back.png" height="60px"></figure></a>
+    <a href="login.html"><figure class="you"><img src="ww.png" height="60px"></figure></a>
 </div>
 
 </body>
