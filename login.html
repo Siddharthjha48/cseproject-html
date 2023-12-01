@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Login Page</title>
 
-    <link rel="stylesheet" href="login.css" />
     <style>
         .login {
             margin-right: 45px;
@@ -51,6 +50,77 @@
 
         label input {
             border-radius: 8px;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-color: brown;
+            color: #f5f6f7;
+            font-family: Tahoma;
+            font-size: 16px;
+
+        }
+
+        #ct {
+            position: fixed;
+            top: 25vh;
+            z-index: 45;
+            left: 0;
+
+        }
+
+
+        h1,
+        p {
+            margin: 1em auto;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        form {
+            width: 60vw;
+            max-width: 500px;
+            min-width: 300px;
+            margin: 0 auto;
+            padding-bottom: 2em;
+        }
+
+        fieldset {
+            border: none;
+            padding: 2rem 0;
+            border-bottom: 3px solid #3b3b4f;
+        }
+
+        fieldset:last-of-type {
+            border-bottom: none;
+        }
+
+        label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        input,
+        textarea,
+        select {
+            margin: 10px 0 0 0;
+            width: 50%;
+            min-height: 2em;
+        }
+
+        input,
+        textarea {
+            background-color: skyblue;
+            color: #ffffff;
+        }
+
+        button {
+            margin-left: 180px;
         }
     </style>
 
