@@ -122,6 +122,19 @@
         button {
             margin-left: 180px;
         }
+
+        .back {
+            border: 3px solid gold;
+            border-radius: 50%;
+            position: fixed;
+            left: 30px;
+            top: 1.30%;
+        }
+
+        .back:hover {
+            transform: scale(1.2);
+            transition: 1s;
+        }
     </style>
 
     <script>
@@ -144,12 +157,15 @@
 
             <label for="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Password</i>: &nbsp;&nbsp;<input id="password"
                     type="password" required /></label>
-            <button><a href="welcome.html">Submit</a></button>
+            <button><a href="project.html">Submit</a></button>
             <br>
             <div class="login">
                 <p>Login with <span class="one"><a href="google.html" target="_self">Google</a></span></p>
                 <p>Dont' have account <span class="two"><a href="sign.html" target="_self">Sign up</a></span></p>
             </div>
+
+            <a href="welcome.html" target="_blank"><img src="ww.png" height="45px" class="back"></a>
+
 
 
         </form>
