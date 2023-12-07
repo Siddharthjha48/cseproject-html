@@ -4,86 +4,173 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
-   
-    <link rel="stylesheet" href="login.css" />
-        <style>
 
-         .login{
+    <style>
+        .login {
             margin-right: 45px;
-            }
+        }
 
-        .one{
+        .one {
             text-decoration: underline;
         }
 
-        .one:hover{
-            cursor:pointer;
-            background-color:yellow;
+        .one:hover {
+            cursor: pointer;
+            background-color: yellow;
         }
 
-        .two{
-            text-decoration: underline;    
+        .two {
+            text-decoration: underline;
         }
 
-        a{
-            color:blue;
+        a {
+            color: blue;
         }
 
-        .two:hover{
-            cursor:pointer;
-            background-color:yellow;     
-         }
-
-       p{
-        color:blueviolet;
-       }
-
-       button{
-        background-color: rgb(27, 250, 250);
-        height:30px;
-        width:80px;
-        margin-left: 195px;
-        margin-top:10px;
-        border-radius: 10px;
-        font-size: 15px;
-        text-decoration:none;
-        text-transform: uppercase;
+        .two:hover {
+            cursor: pointer;
+            background-color: yellow;
         }
 
-       label input{
-        border-radius: 8px;
-       }
+        p {
+            color: blueviolet;
+        }
 
-        </style>
+        button {
+            background-color: rgb(27, 250, 250);
+            height: 30px;
+            width: 80px;
+            margin-left: 195px;
+            margin-top: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
 
-        <script>
-            alert("Password must be atleast 8 character with one special character");
-        </script>
+        label input {
+            border-radius: 8px;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-color: brown;
+            color: #f5f6f7;
+            font-family: Tahoma;
+            font-size: 16px;
+
+        }
+
+        #ct {
+            position: fixed;
+            top: 25vh;
+            z-index: 45;
+            left: 0;
+
+        }
+
+
+        h1,
+        p {
+            margin: 1em auto;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        form {
+            width: 60vw;
+            max-width: 500px;
+            min-width: 300px;
+            margin: 0 auto;
+            padding-bottom: 2em;
+        }
+
+        fieldset {
+            border: none;
+            padding: 2rem 0;
+            border-bottom: 3px solid #3b3b4f;
+        }
+
+        fieldset:last-of-type {
+            border-bottom: none;
+        }
+
+        label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        input,
+        textarea,
+        select {
+            margin: 10px 0 0 0;
+            width: 50%;
+            min-height: 2em;
+        }
+
+        input,
+        textarea {
+            background-color: skyblue;
+            color: #ffffff;
+        }
+
+        button {
+            margin-left: 180px;
+        }
+
+        .back {
+            border: 3px solid gold;
+            border-radius: 50%;
+            position: fixed;
+            left: 30px;
+            top: 1.30%;
+        }
+
+        .back:hover {
+            transform: scale(1.2);
+            transition: 1s;
+        }
+    </style>
+
+    <script>
+        alert("Password must be atleast 8 character with one special character");
+    </script>
 </head>
 
 <body>
     <div>
-        <video  autoplay muted loop id="myVideo">
+        <video autoplay muted loop id="myVideo">
             <source src="yt.mp4" type="video/mp4">
         </video>
     </div>
     <div id="ct">
         <h1>Login Page 🎁</h1>
 
-        <form name="myForm"  method="post" required>
-            <label for="fname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Username</i>: &nbsp;<input id="fname" type="text" required /></label>
+        <form name="myForm" method="post" required>
+            <label for="fname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Username</i>: &nbsp;<input id="fname" type="text"
+                    required /></label>
 
-            <label for="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Password</i>:  &nbsp;&nbsp;<input id="password"  type="password" required  /></label>
-            <button><a href="project.html" >Submit</a></button>
+            <label for="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Password</i>: &nbsp;&nbsp;<input id="password"
+                    type="password" required /></label>
+            <button><a href="project.html">Submit</a></button>
             <br>
             <div class="login">
-            <p>Login with <span class="one" ><a href="google.html"  target="_self">Google</a></span></p>
-            <p>Dont' have account <span class="two"><a href="sign.html" target="_self">Sign up</a></span></p>
-        </div>
+                <p>Login with <span class="one"><a href="google.html" target="_self">Google</a></span></p>
+                <p>Dont' have account <span class="two"><a href="sign.html" target="_self">Sign up</a></span></p>
+            </div>
+
+            <a href="welcome.html" target="_blank"><img src="ww.png" height="45px" class="back"></a>
 
 
-          </form>
-        </div>
+
+        </form>
+    </div>
 
 </body>
+
 </html>
